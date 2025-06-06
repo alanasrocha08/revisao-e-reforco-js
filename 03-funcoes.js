@@ -45,4 +45,32 @@ console.log(mensagem1);
 let mensagem2 = "O resultado é "+resposta2; 
 console.log(mensagem2);
 
+/*Sintaxe moderna, função flecha/seta (arrow funtion)
+Mesta sintaxe, a ordem de declaração IMPORTA. */
+const exemplo3 = () => {
+    console.log("Arrow Function");
+};
+
+exemplo3(); //Chamada deve ser feita apóa decalração
+
+/* Quando a função tem SOMENTE UM parâmetro, podemos rmover os parênteses. E QUANDO ELA FAZ somente uma única ação (ideal), podemos remover as chab=ves e dixar em uma linha. */
+const saudacao = (nome) => console.log("Olá, "+nome);
+
+saudacao("Alana");
+saudacao("Clara");
+saudacao("Julia");
+
+separador();
+
+//Com retorno EXPLÍCITO
+const calcularMetadeSintaxeCompleta = (valor) => {
+    return valor / 2;
+}
+console.log(calcularMetadeSintaxeCompleta(10)); 
+
+//Com retorno IMPLÍCITO 
+const calcularMetade = valor => valor / 2;
+console.log(calcularMetade(10));
+
+
 
