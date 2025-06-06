@@ -31,8 +31,6 @@ function calcularDiferenca(valor1, valor2){
     return valor1 - valor2;
 }
 
-separador();
-
 /*2) Chame esta função pelo menos duas vezes passando valores diferentes e guardando os resultasdos en variáveis de escopo global. */
 let resposta = calcularDiferenca(7,2);
 let resposta2 = calcularDiferenca(9,3);
@@ -45,6 +43,7 @@ console.log(mensagem1);
 let mensagem2 = "O resultado é "+resposta2; 
 console.log(mensagem2);
 
+separador();
 /*Sintaxe moderna, função flecha/seta (arrow funtion)
 Mesta sintaxe, a ordem de declaração IMPORTA. */
 const exemplo3 = () => {
@@ -53,7 +52,7 @@ const exemplo3 = () => {
 
 exemplo3(); //Chamada deve ser feita apóa decalração
 
-/* Quando a função tem SOMENTE UM parâmetro, podemos rmover os parênteses. E QUANDO ELA FAZ somente uma única ação (ideal), podemos remover as chab=ves e dixar em uma linha. */
+/* Quando a função tem SOMENTE UM parâmetro, podemos remover os parênteses. E QUANDO ELA FAZ somente uma única ação (ideal), podemos remover as chab=ves e dixar em uma linha. */
 const saudacao = (nome) => console.log("Olá, "+nome);
 
 saudacao("Alana");
@@ -71,6 +70,23 @@ console.log(calcularMetadeSintaxeCompleta(10));
 //Com retorno IMPLÍCITO 
 const calcularMetade = valor => valor / 2;
 console.log(calcularMetade(10));
+
+separador();
+
+//Exercício de refatoração 
+/*1) Reescreva a função do exercício anterior usando a sintaxe de arrow function */
+const calcularDiferencaSintaxe = (valor1, valor2) => valor1 - valor2;
+
+/*2) Teste fazendo novas chamadas e novas saídas */
+let resultado1 = calcularDiferencaSintaxe(7, 3);
+let resultado2 = calcularDiferencaSintaxe(9, 2);
+
+let mensagem3 = "O resultado da diferença é "+resultado1;
+console.log(mensagem3);
+let mensagem4 = "O resultado da diferença é "+resultado2;
+console.log(mensagem4);
+
+separador();
 
 
 
