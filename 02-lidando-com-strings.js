@@ -12,13 +12,13 @@ let estado = "SP"
 //let mensagem1 = "Meu nome é " +nome +""+sobrenome +", tenho" +idade +"anos e moro em" +cidade+"/"+estado+"."; 
 
 let mensagem1 = "Meu nome é "+nome;
-mensagem1 += "" +sobrenome+" ,tenho"+idade;
+mensagem1 += " " +sobrenome+",tenho"+idade;
 mensagem1 += " anos e moro em "+cidade+"/"+estado+"."
 
 console.log(mensagem1);
 
 
 // TEMPLATE STRING/LITERAL
-let mensagem2 =  `Meu nome é ${nome} ${sobrenome}, tenho ${cidade} anos e moro em ${cidade}/${estado}. Sou ${idade >= 18 ? 'maior' : 'menor'} de idade.`;
+let mensagem2 =  `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro em ${cidade}/${estado}. Sou ${idade >= 18 ? 'maior' : 'menor'} de idade.`;
 
 console.log(mensagem2); 
