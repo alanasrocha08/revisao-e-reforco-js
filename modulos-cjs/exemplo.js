@@ -1,7 +1,7 @@
 'use strict';
 
 function minhaFuncao(){
-    console.log("Olá! Função criada em uma módulo");
+    console.log("Olá! Função criada em um módulo");
 }
 
 const clientes = ['Alana Rocha', 'Clara Igreja', 'Julia Moura'];
