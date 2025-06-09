@@ -15,3 +15,5 @@ const livro = {
 const alunos = ['Clara', 'Julia', 'kauê', 'Nathalya'];
 
 export { pessoa, livro, alunos };
+
+
