@@ -12,4 +12,4 @@ function saudacao(nome){
 const clientes = ['Nathalya Suguiura', 'Kauê Martins', 'Vitor Alexandre']; 
 
 // Colocando entre chaves, é para exportar um objeto
-export { saudacao, clientes }; 
+export { saudacao, clientes, separador }; 
