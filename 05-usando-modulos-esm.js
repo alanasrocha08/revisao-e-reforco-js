@@ -44,10 +44,11 @@ separador();
 
 4) No arquivo 05, importe e utilize estas funções passando textor e valores para testes.*/
 
-import { converterMaiusculo, converterMinusculo, moeda } from './modulos-esm/funcoes.js';
-console.log(converterMaiusculo("Alana Silva Rocha"));
-console.log(converterMinusculo("JULIA DE ARAÚJO MOURA"));
-console.log(moeda(100.65));
+import * as recursos from "./modulos-esm/funcoes.js";
+
+console.log(recursos.converterMaiusculo("Alana Silva Rocha"));
+console.log(recursos.converterMinusculo("JULIA DE ARAÚJO MOURA"));
+console.log(recursos.moeda(100.65)); 
 
 
 
