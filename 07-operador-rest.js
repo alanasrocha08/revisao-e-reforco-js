@@ -1,5 +1,7 @@
 'use strict';
 
+import 
+
 /* Sobre  operador rest...
 Usamos o rest para mesclar uma relação de parâmetros/ argumentos para uma função. Na prática, od parâmetros se comportam com um array podendo receber interações via loop. */
 function somar(...valores){
@@ -22,5 +24,14 @@ let resultado1 = somar(10,20);
 let resultado2 = somar(10,20,30); 
 console.log(resultado1);
 console.log(resultado2);
+
+console.log("-------------------------")
+
+console.log(classificar("Goiaba", "Amora", "Banana", "Laranja", "Maçã"));
+console.log(
+    classificar("Ballet", "jazz", "Samba", "Forró", "Sertanejo")
+);
+
+
 
 

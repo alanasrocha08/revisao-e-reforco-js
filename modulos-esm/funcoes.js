@@ -12,4 +12,8 @@ export const moeda  = (valor) => {
      return valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 };
 
-// export {converterMaiusculo, converterMinusculo, moeda};
+/* Usamos o rest operador para obter uma lista de parâmetros, não importando a quantidade.*/
+
+export function classificar (...texto){
+    return texto.sort(item)
+}
