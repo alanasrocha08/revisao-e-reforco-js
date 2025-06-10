@@ -9,5 +9,38 @@
     <h1>Acessando módulos</h1>
     <hr>
     <ul id="lista-alunos"></ul>
+
+    <script type="module">
+        'use strict'
+
+        
+        /* Exercício de revisão
+        Programe aqui as instruções necessárias para fazer com que os dados do array alunos, sejam inseridos como intens (tag <li>) dentro da lista não-ordenada chamada lista-alunos.
+            
+        Dicas:
+        - Use a seleção de elementos no DOM.
+        - Use loop para percorrer os elementos do array.
+        - Crie a tag li dinamicamente com o JS.
+        - Adicione o conteúdo do array dentri da tag li criada. 
+            */
+
+           import { alunos } from './modulos-esm/dados.js';
+
+        // Usando a seleção de elemento no DOM
+        const lista = document.querySelector("ul");
+
+        // Usando loop para percorrer os elementos do array
+        for(const aluno of alunos) {
+            //Criando um elemento li 
+            let item = document.createElement("li");
+
+            // Adicionando conteúdo ao elemto li criado 
+            item.innerHTML = aluno;
+
+            // Inserir o elemento criado e com o nome di aluno na lista 
+            lista.appendChild(item);
+        }
+
+    </script>
 </body>
 </html>
