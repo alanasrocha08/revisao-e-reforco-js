@@ -59,10 +59,27 @@ const diversos = [
 ];
 
 // Faça a desestruturação dos elementos deste array
-// Teste usando console.log() para exibir cada elemento extraído
-
 const [texto1, [teclado, monitor, mouse], numero, texto2] = diversos;
+
+// Teste usando console.log() para exibir cada elemento extraído
 console.log(texto1);
 console.log(teclado);
 console.log(numero);
 console.log(texto2("Alana"));
+
+separador();
+
+const guloseimas = [
+  "Brigadeiro",
+  "Brownie",
+  "Torta de limão",
+  "Coxinha",
+  "Pastel",
+  "Pizza",
+  "Esfiha",
+];
+
+// Desestruturação com operador rest
+const [brigadeiro, brownie, tortaLimao, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); // virou um array
