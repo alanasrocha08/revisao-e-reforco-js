@@ -1,37 +1,30 @@
-'use strict';
+"use strict";
 
-import 
+import { classificar } from "./modulos-esm/funcoes.js";
 
-/* Sobre  operador rest...
-Usamos o rest para mesclar uma relação de parâmetros/ argumentos para uma função. Na prática, od parâmetros se comportam com um array podendo receber interações via loop. */
-function somar(...valores){
-    // Variável acumuadora
-    let total = 0;
+/* Sobre o operador rest  ...
+Usamos o rest para mesclar uma relação de parâmetros/argumentos 
+para uma função. Na prática, os parâmetros se comportam como um array podendo receber iterações via loop. */
+function somar(...valores) {
+  // Variável acumuladora
+  let total = 0;
 
-    // Interação para somar e guardar o total
-    for(const valor of valores){
-        total += valor;
-    }
+  // Iteração para somar e guardar o total
+  for (const valor of valores) {
+    total += valor;
+  }
 
-    return total;
+  return total;
 }
-let valores1 = [10,20];
-let valores2 = [10,20,30];
-let valores3 = [10,20,30,40];
 
-
-let resultado1 = somar(10,20);
-let resultado2 = somar(10,20,30); 
+let resultado1 = somar(10, 20);
+let resultado2 = somar(10, 20, 50);
 console.log(resultado1);
 console.log(resultado2);
 
-console.log("-------------------------")
+console.log("----------------");
 
-console.log(classificar("Goiaba", "Amora", "Banana", "Laranja", "Maçã"));
+console.log(classificar("Goiaba", "Amora", "Banana", "Abacate"));
 console.log(
-    classificar("Ballet", "jazz", "Samba", "Forró", "Sertanejo")
+  classificar("Yes", "Rush", "Pink Floyd", "Slayer", "Iron Maiden", "Metallica")
 );
-
-
-
-

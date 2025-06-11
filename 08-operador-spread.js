@@ -1,37 +1,44 @@
 "use strict";
 
 import { classificar } from "./modulos-esm/funcoes.js";
-import { separador } from "./modulos-esm/exemplo.js";
+import { separador } from "./modulos-esm/exemplos.js";
 
 /* Sobre o operador spread ...
-Usamos o spread para espalhar dados de arrays e objetos, o que pode ser útil na chamada de funções e também na mesclagem desras estruturas. */
+Usamos o spread para "espalhar" dados de arrays e objetos, 
+o que pode ser útil na chamada de funções e também na
+mesclagem destas estruturas. */
 
 // Spread em arrays
-let frutas = ["Maçã", "Banana", "Laranja"];
-let maisFrutas = ["Goiaba", "Amora", "Pera", ...frutas];
+const bandas = ["Yes", "Rush", "Pink Floyd"];
+const maisBandas = ["Dream Theater", "Savatage", ...bandas];
 
-console.log(frutas);
-console.log(maisFrutas);
+console.log(bandas);
+console.log(maisBandas);
 
 separador();
 
-//Spread para "espalhar" parâmetros para uma função
-console.log(classificar(...maisFrutas));
+// Spread para "espalhar" parâmetros para uma função
+console.log(classificar(...maisBandas));
 
 separador();
 
 // Spread em objetos
 const cliente = {
-  nome: "Alana",
-  cidade: "São Paulo",
-  idade: 17,
+  nome: "Ozzy",
+  cidade: "Belo Horizonte",
+  idade: 77,
 };
 
 const compra = {
-  ...cliente, // Copiando as propriedades de cliente para compra
-  codigoPedido: "123456",
-  produdutos: ["Pão francês", "Leite", "Queijo"],
-  total: 50.0,
+  ...cliente, // copiando as propriedades de cliente para compra
+  codigoPedido: "123xyz",
+  produtos: ["Morcego", "Pomba", "Microfone"],
+  total: 2589.66,
+  nome: "Paulo Cantor", // sobreescrevendo uma propriedade que veio com spread
 };
 
 console.log(compra);
+
+console.log(
+  `O cliente ${compra.nome} fez uma compra no valor de ${compra.total}`
+);

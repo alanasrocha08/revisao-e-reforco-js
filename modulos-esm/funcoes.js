@@ -1,19 +1,20 @@
-'use strict';
+"use strict";
 
-export const converterMaiusculo = (texto) => {
-    return texto.toUpperCase();
+export const converterMaiuscula = (texto) => texto.toUpperCase();
+
+export const converterMinuscula = (texto) => texto.toLowerCase();
+
+export const formatarMoeda = (valor, moeda = "BRL", localidade = "pt-BR") => {
+  return valor.toLocaleString(localidade, {
+    style: "currency",
+    currency: moeda,
+  });
 };
 
-export const converterMinusculo = (texto) => {
-    return texto.toLowerCase();
-};
-
-export const moeda  = (valor) => {
-     return valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-};
-
-/* Usamos o rest operador para obter uma lista de parâmetros, não importando a quantidade.*/
-
-export function classificar (...texto){
-    return texto.sort(item)
+/* Usamos o rest operator para obter uma lista de parâmetros, não 
+importando a quantidade */
+export function classificar(...texto) {
+  return texto.sort();
 }
+
+// export { converterMaiuscula, converterMinuscula, formatarMoeda }
