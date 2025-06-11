@@ -40,3 +40,29 @@ const linguagens = [
 const [frontEnd, backEnd] = linguagens;
 console.log(frontEnd[2]); // JavaScript
 console.log(backEnd[3]); // Python
+
+separador();
+
+// Desestruturação aninhada
+const [[html, css, js], [php, node, sql, python, asp]] = linguagens;
+console.log(js); //js
+console.log(python); // python
+
+separador();
+
+/*Mini-exercício */
+const diversos = [
+  "JavaScript - Reforço",
+  ["Teclado", "Monitor", "Mouse"],
+  2112,
+  (texto) => texto.toUpperCase(),
+];
+
+// Faça a desestruturação dos elementos deste array
+// Teste usando console.log() para exibir cada elemento extraído
+
+const [texto1, [teclado, monitor, mouse], numero, texto2] = diversos;
+console.log(texto1);
+console.log(teclado);
+console.log(numero);
+console.log(texto2("Alana"));
