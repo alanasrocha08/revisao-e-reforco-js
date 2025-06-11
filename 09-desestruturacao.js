@@ -95,11 +95,26 @@ const musico = {
 };
 
 //Acessando propriedade através do objeto (sem desestruturação)
-console.log(musico.nome);
-console.log(musico.idade);
+//console.log(musico.nome);
+//console.log(musico.idade);
 
+// Com desestruturação
 const { nome, instrumento, idade, banda } = musico;
 console.log(nome);
 console.log(instrumento);
 console.log(idade);
 console.log(banda);
+
+separador();
+
+const aluno = {
+  nome: "Vitor",
+  cidade: "São Paulo",
+  estado: "SP",
+};
+
+//Desestruturação com o alias/apelido em propriedade
+const { nome: nomeDoAluno, cidade, estado } = aluno;
+console.log(nomeDoAluno); // acessando pelo apelido
+console.log(cidade);
+console.log(estado);
