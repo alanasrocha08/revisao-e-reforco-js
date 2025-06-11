@@ -1,14 +1,15 @@
-//Habilitando o modo estrito da linguagem 
-'use strict';
+"use strict";
 
 let preco = 100;
 let resultado;
 
-if(preco >= 50){
-    resultado = "Beleza...";
+const aluno = "Fulano";
+console.log(aluno);
+
+if (preco >= 50) {
+  resultado = "Beleza...";
 } else {
-    resultado = "Que pena...";
+  resultado = "Que droga...";
 }
 
 console.log(resultado);
-

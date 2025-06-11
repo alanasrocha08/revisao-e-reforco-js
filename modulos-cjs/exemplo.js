@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
-function minhaFuncao(){
-    console.log("Olá! Função criada em um módulo");
+function minhaFuncao() {
+  console.log("Olá! Função criada em um módulo");
 }
 
-const clientes = ['Alana Rocha', 'Clara Igreja', 'Julia Moura'];
+const clientes = ["Jon Oliva", "David Gilmour", "Floor Jansen"];
 
-/*CJS: CommonJS */
+/* CJS: CommonJS */
 module.exports = { minhaFuncao, clientes };
