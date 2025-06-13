@@ -87,9 +87,11 @@ Gere uma nova de lista de cursos contendo apenas os titulos e as categorias. */
 //console.log(cursosComTituloCategoria);
 
 // Versão 3: Usando desestruturação de parâmetros
-const cursosComTituloCategoria = cursos.map((titulo, categoria) => ({
-  titulo,
-  categoria,
-}));
+/*Note que podemos até mesmo deixar o nome dos parâmetros.
+Ou seja, em vez de usar titulo: titulo, podemos deixar somente titulo. Em vez de usar categoria: categoria, basta categoria.*/ const cursosComTituloCategoria =
+  cursos.map((titulo, categoria) => ({
+    titulo,
+    categoria,
+  }));
 
 console.log(cursosComTituloCategoria);
