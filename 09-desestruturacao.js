@@ -158,3 +158,33 @@ console.log(localidade);
 console.log(numeroEndereco);
 console.log(bairro);
 console.log(atendimento());
+
+// Desestruturação de parâmetros de função
+function processarPedido([produto, preco, marca = "não informado"]) {
+  console.log("Produto: " + produto);
+  console.log("Preço: " + preco);
+  console.log("Marca: " + marca);
+}
+
+const pedidoA = ["TV", 1500, "Sony"];
+processarPedido(pedidoA);
+
+const pedidoB = ["Notebook", 2500];
+processarPedido(pedidoB);
+
+separador();
+
+const exibirDados = ({ titulo, ano = "desconhecido" }) =>
+  console.log(`Filme: ${titulo} - Ano: ${ano} \n`);
+
+const filme1 = {
+  titulo: "O Hobbit",
+  ano: 2012,
+};
+
+const filme2 = {
+  titulo: "O Senhor dos Anéis",
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
