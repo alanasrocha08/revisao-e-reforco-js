@@ -73,6 +73,7 @@ separador();
 
 /* Desafio
 Gerar um novo array com os cursos na categoria Back-End e cCOM O PRECO atualiza com 10% de desconto. Para esta atividade você deverá combinar filter com map.*/
+
 const cursosComDesconto = cursos
   .filter((curso) => curso.categoria === "Back-End")
   .map((curso) => {
