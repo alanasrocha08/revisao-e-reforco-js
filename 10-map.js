@@ -79,9 +79,17 @@ Gere uma nova de lista de cursos contendo apenas os titulos e as categorias. */
 //console.log(cursosComTituloCategoria);
 
 // Versão 2: com retorno implícito
-const cursosComTituloCategoria = cursos.map((curso) => ({
-  titulo: curso.titulo,
-  categoria: curso.categoria,
+//const cursosComTituloCategoria = cursos.map((curso) => ({
+//titulo: curso.titulo,
+//categoria: curso.categoria,
+//}));
+
+//console.log(cursosComTituloCategoria);
+
+// Versão 3: Usando desestruturação de parâmetros
+const cursosComTituloCategoria = cursos.map((titulo, categoria) => ({
+  titulo,
+  categoria,
 }));
 
 console.log(cursosComTituloCategoria);
