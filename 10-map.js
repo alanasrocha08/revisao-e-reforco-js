@@ -1,6 +1,6 @@
 "use strict";
 
-import { separador } from "./modulos-esm/exemplos.js";
+import { separador } from "./modulos-esm/exemplo.js";
 import cursos from "./modulos-esm/cursos.js";
 
 /* map (mapear, mapeamento - transformar/gerar em outra coisa) 
@@ -69,11 +69,19 @@ separador();
 
 /* Exercício
 Gere uma nova de lista de cursos contendo apenas os titulos e as categorias. */
-const cursosComTituloCategoria = cursos.map((curso) => {
-  return {
-    titulo: curso.titulo,
-    categoria: curso.categoria,
-  };
-});
+//const cursosComTituloCategoria = cursos.map((curso) => {
+//return {
+//titulo: curso.titulo,
+//categoria: curso.categoria,
+//};
+//});
+
+//console.log(cursosComTituloCategoria);
+
+// Versão 2: com retorno implícito
+const cursosComTituloCategoria = cursos.map((curso) => ({
+  titulo: curso.titulo,
+  categoria: curso.categoria,
+}));
 
 console.log(cursosComTituloCategoria);
