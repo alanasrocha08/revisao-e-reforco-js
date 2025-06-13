@@ -65,6 +65,6 @@ Gere um novo array com os cursos que atendam os seguintes critérios:
 const cursosSelecionados = cursos.filter(
   (curso) =>
     (curso.categoria === "Front-End" || curso.categoria === "Mobile") &&
-    curso.preco > 400
+    curso.preco > 600
 );
 console.log(cursosSelecionados);
